@@ -17,8 +17,9 @@ from sklearn.model_selection import cross_val_score
 
 #load data
 @st.cache_data
-df_data_hour = pd.read_csv('hour.csv')
-df_data_day = pd.read_csv('day.csv')
+def load_data(url) : 
+pd.read_csv('hour.csv')
+pd.read_csv('day.csv')
 
 #mengakses data
 df_data_hour.info()
